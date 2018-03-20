@@ -55,10 +55,10 @@ COPY ./s2i/bin/ /usr/local/sti
 
 # the root user and make the content of /opt/app-root owned by user 1001
 # RUN chown -R 1001:1001 /opt/app-root
-#RUN chown -R 1001:1001 /opt/openshift
+RUN chown -R 1001:1001 /opt/openshift
 # This default user is created in the openshift/base-centos7 image
-#USER 1001
-USER root
+USER 1001
+#USER root
 # Set the default port for applications built using this image
 EXPOSE 8080
 
