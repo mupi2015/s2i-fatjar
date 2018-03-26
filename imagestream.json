@@ -10,7 +10,7 @@
             "name": "latest",
             "annotations": {
                "description": "Java OpenJDK S2I image",
-               "iconClass": "icon-jboss",
+               "iconClass": "icon-spring",
                "tags": "builder,java,maven,gradle,springboot,vertx,widlfly-swarm,dropwizard,microservices,fatjar",
                "supports": "java:8,maven:3,gradle:2.6",
                "sampleRepo": "https://github.com/mupi2015/oc-gradle.git",
