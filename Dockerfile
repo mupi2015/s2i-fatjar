@@ -6,7 +6,7 @@ MAINTAINER Arkaprovo Bhattacharjee <arkaprovo.bhatatcharjee@sath.com>
 
 #RUN mkdir /usr/libexec
 RUN mkdir /usr/libexec/s2i
-RUN mkdir /usr/libexec/s2i/assemble
+#RUN mkdir /usr/libexec/s2i/assemble
 
 # Install build tools on top of base image
 # Java jdk 8, Maven 3.5, Gradle 4.6
