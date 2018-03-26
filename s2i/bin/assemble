@@ -81,12 +81,12 @@ elif [ -f "$LOCAL_SOURCE_DIR/build.gradle" ]; then
   echo "Building with gradle. $LOCAL_SOURCE_DIR/build.gradle found."
 
   # Use Gradle wrapper if available
-  if [ -f "$LOCAL_SOURCE_DIR/gradlew" ]; then
-    GRADLE_CMD="./gradlew"
-  else
-    GRADLE_CMD="gradle"
-  fi
-      
+  # if [ -f "$LOCAL_SOURCE_DIR/gradlew" ]; then
+  #  GRADLE_CMD="./gradlew"
+  # else
+  # GRADLE_CMD="gradle"
+  # fi
+  GRADLE_CMD="gradle"    
   pushd $LOCAL_SOURCE_DIR &> /dev/null
 
   if [ -z "$BUILDER_ARGS" ]; then
