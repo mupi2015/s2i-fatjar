@@ -57,7 +57,7 @@ COPY ./contrib/settings.xml $HOME/.m2/
 # sets io.openshift.s2i.scripts-url label that way, or update that label
 LABEL io.openshift.s2i.scripts-url=image:///usr/local/sti
 COPY ./s2i/bin/ /usr/local/sti
-
+RUN chmod +x /usr/local/sti/*
 # the root user and make the content of /opt/app-root owned by user 1001
 # RUN chown -R 1001:1001 /opt/app-root
 RUN chown -R 1001:1001 /opt/openshift
