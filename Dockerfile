@@ -4,6 +4,10 @@ FROM openshift/base-centos7
 MAINTAINER Arkaprovo Bhattacharjee <arkaprovo.bhatatcharjee@sath.com>
 # HOME in base image is /opt/app-root/src
 
+RUN mkdir /usr/libexec
+RUN /usr/libexec/s2i
+RUN /usr/libexec/s2i/assemble
+
 # Install build tools on top of base image
 # Java jdk 8, Maven 3.5, Gradle 4.6
 RUN mkdir -p /usr/local/sti
