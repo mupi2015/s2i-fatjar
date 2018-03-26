@@ -4,7 +4,7 @@ FROM openshift/base-centos7
 MAINTAINER Arkaprovo Bhattacharjee <arkaprovo.bhatatcharjee@sath.com>
 # HOME in base image is /opt/app-root/src
 
-RUN mkdir /usr/libexec
+#RUN mkdir /usr/libexec
 RUN /usr/libexec/s2i
 RUN /usr/libexec/s2i/assemble
 
