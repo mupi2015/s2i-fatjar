@@ -1,4 +1,8 @@
 
+# Instructions
+To list the Imagestream under general catalogue execute this command
+oc create -f https://raw.githubusercontent.com/mupi2015/s2i-fatjar/master/imagestream.json -n openshift
+
 # Docker build available on 
 https://hub.docker.com/r/arkaprovo/s2i-fatjar/
 
