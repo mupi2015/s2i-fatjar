@@ -1,4 +1,7 @@
 
+# Docker build available on 
+https://hub.docker.com/r/arkaprovo/s2i-fatjar/
+
 # Creating a basic S2I builder image  
 
 ## Getting started  
